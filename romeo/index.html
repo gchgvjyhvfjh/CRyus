@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人作品集</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Cyrus</div>
+        <div class="nav-links">
+            <a href="#home" class="active">首页</a>
+            <a href="#portfolio">朋友圈</a>
+            <a href="#about">关于</a>
+            <a href="#contact">联系</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Fullscreen Carousel -->
+    <section id="home" class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide active" style="background-image: url('imags/1.jpg');">
+                <div class="slide-content">
+                    <h1>你好</h1>
+                    <p class="subtitle">Cyrus</p>
+                    <p class="info">2024</p>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('imags/2.jpg');">
+                <div class="slide-content">
+                    <h1>人工智能</h1>
+                    <p class="subtitle">青年挺膺担当</p>
+                    <p class="info">2024</p>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('imags/3.jpg');">
+                <div class="slide-content">
+                    <h1>相信自己</h1>
+                    <p class="subtitle">14 ages</p>
+                    <p class="info">2024</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+        <div class="carousel-indicators"></div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>朋友圈</h2>
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="imags/4.jpg" alt="作品1">
+                <div class="photo-overlay">
+                    <h3>作品标题1</h3>
+                    <p>作品描述1</p>
+                </div>
+            </div>
+            <div class="photo-item">
+                <img src="imags/5.jpg" alt="作品2">
+                <div class="photo-overlay">
+                    <h3>作品标题2</h3>
+                    <p>作品描述2</p>
+                </div>
+            </div>
+            <div class="photo-item">
+                <img src="imags/6.jpg" alt="作品3">
+                <div class="photo-overlay">
+                    <h3>作品标题3</h3>
+                    <p>作品描述3</p>
+                </div>
+            </div>
+            <div class="photo-item">
+                <img src="imags/7.jpg" alt="作品4">
+                <div class="photo-overlay">
+                    <h3>作品标题4</h3>
+                    <p>作品描述4</p>
+                </div>
+            </div>
+            <div class="photo-item">
+                <img src="imags/8.jpg" alt="作品5">
+                <div class="photo-overlay">
+                    <h3>作品标题5</h3>
+                    <p>作品描述5</p>
+                </div>
+            </div>
+            <div class="photo-item">
+                <img src="imags/9.jpg" alt="作品6">
+                <div class="photo-overlay">
+                    <h3>作品标题6</h3>
+                    <p>作品描述6</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="profile-card">
+            <div class="profile-image">
+                <img src="imags/10.jpg" alt="个人照片">
+            </div>
+            <div class="profile-content">
+                <h2>关于我</h2>
+                <p>我是一名充满热情的摄影师和数字艺术家，致力于捕捉美好时刻，创造引人入胜的视觉故事。</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>联系我</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" required>
+                <label for="name">姓名</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" required>
+                <label for="email">邮箱</label>
+            </div>
+            <div class="form-group">
+                <textarea id="message" required></textarea>
+                <label for="message">留言</label>
+            </div>
+            <button type="submit" class="submit-btn">发送消息</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025cyrus</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
